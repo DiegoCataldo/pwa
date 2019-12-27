@@ -1,0 +1,75 @@
+.cbp-spmenu {
+    background: #005880;
+    position: fixed;
+    padding: 30px;
+  }
+
+  .cbp-spmenu h3 {
+    color: #afdefa;
+    font-size: 1.9em;
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    background: #0d77b6;
+  }
+
+  .cbp-spmenu a {
+    display: block;
+    color: #fff;
+    font-size: 0.9em !important;
+    font-weight: 300;
+  }
+
+  nav.cbp-spmenu a:hover {
+    background: #258ecd;
+  }
+
+  .colabs-header {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    top: 27px;
+    right: 60px;
+  }
+
+  .colabs-header a {
+    margin-top: 0 !important;
+  }
+
+  .link {
+    cursor: pointer;
+    width: 50%;
+    height: auto;
+  }
+
+  .refit_oceano {
+    top: 4px !important;
+  }
+
+  #link_cr2 {
+    left: 40px !important;
+  }
+
+  #link_oceano {
+    width: 100%;
+    left: 10px !important;
+  }
+
+  #link_imar {
+    width: 75%;
+    left: 21px !important;
+    top: 6px !important;
+  }
+
+  #link_usach {
+    width: 80%;
+    left: 20px !important;
+  }
+
+  .cerrarmenuicon {
+    color: white
+  }
+
+  .inputs-form {
+      margin-bottom:30px;
+  }

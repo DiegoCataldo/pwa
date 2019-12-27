@@ -1,0 +1,2220 @@
+/* Barra institucional UdeC */
+.barra-udec {
+    width: 100%;
+    height: 1%;
+    overflow: hidden;
+}
+#udec-left, #udec-right{
+    float: left;
+     height: 5px;
+}
+#udec-left {
+    background-color: #003a6a;
+    width: 60%;
+}
+#udec-right {
+    background-color: #ffa000;
+    width: 40%;
+}
+
+/* utilitarias */
+.modal-content{
+    background-color: #f2f2f2;
+}
+button.close{
+    background: #050565;
+    padding: 5px 12px 10px 12px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0px auto 10px;
+}
+.box{
+    background-color: #f6f6f6;
+    float: left;
+    padding: 15px;
+}
+#box-content{
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+#box-content h2{
+    margin-top: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.page .container h1{
+    font-size: 25px;
+    /*text-transform: uppercase;*/
+    font-weight: 700;
+}
+.page .container{
+    color: #003a7b;
+}
+.mg-top-bottom{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.mg-top{
+    margin-top: 60px;
+}
+.mg-bottom{
+    margin-bottom:60px;
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 750px;
+    }
+}
+
+/* Estructura básica */
+html, body{
+    height: 100%;
+    width: 100%;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #0a1236;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.wrapp{
+    float: left;
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+div.clear{
+    clear: both;
+    padding: 150px 0 0 0;
+}
+/* header */
+
+header{}
+
+
+
+
+header #marcas h1{
+    float: left;
+    margin: 0;
+    font-size: 0;
+    padding: 0;
+}
+header > #marcas a{
+    float: left;
+    margin-right: 15px;
+    margin-top: 23px;
+}
+
+#home{
+    float: left;
+    height: 45px;
+    width: 50px;
+    cursor: pointer;
+    background-color: #3169bc;
+    border-right: solid 1px #03abf6;
+    border-radius: 4px 0 0 4px;
+}
+#home .fa{
+    font-size: 35px;
+    color: #FFF;
+}
+#home > a#home-link{
+    margin: 5px 8px;
+    display: block;
+}
+#menuToggle{
+    float: left;
+    height: 45px;
+    width: 50px;
+    z-index: 1001;
+    cursor: pointer;
+    background-color: #3169bc;
+    border-radius: 0 4px 4px 0;
+}
+#menuToggle.active{
+
+}
+#menuToggle .i{
+    font-size: 35px;
+    width: 40px;
+    height: 35px;
+    margin: 5px;
+}
+#menuToggle .i > .over {
+    position: absolute;
+    left: 75px;
+    top: 5px;
+}
+
+#menuToggle .i > .fa-bars{
+    color: #FFF;
+}
+#menuToggle.active .i > .fa-bars,
+#menuToggle .i>.fa-times {
+    color: transparent;
+}
+#menuToggle.active .i > .fa-times {
+    color: #fff;
+    color: rgba(255,255,255,0.6);
+}
+
+
+
+ul#menu-menu-1{
+    margin-top: 100px;
+}
+.nav>li {
+    width: 100%;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: #258ecd;
+}
+
+.dropdown-menu {
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    /* display: none; */
+    float: left;
+    width: 100%;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #0084c2;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: none;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #fff;
+    white-space: nowrap;
+}
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover {
+    color: #fff;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+    background-color: #0271a6;
+    outline: 0;
+}
+@media (max-width: 767px) {
+     img#cdom{width: 100px;}
+    img#udec{width: 71px;}
+    img#copas{width: 52px;}
+    img#ceaza{width: 44px;}
+    img#uls{width: 44px;} 
+    img#colab{width:30px;} 
+
+    .logos-header{
+        margin-bottom: 15px;
+    }
+    .contenedor-estacion_header .col-xs-12{
+        margin-bottom: 15px;
+    }
+
+    #ulsdiv{
+
+        left:-120px;
+        position:fixed;
+    }
+}
+
+/* Mayor de 768px */
+@media (min-width: 768px) {
+    header #marcas{
+        height: 100px;
+        border-bottom: solid 5px #01abf6;
+    }
+
+    #home{
+        position: absolute;
+        height: 45px;
+        width: 50px;
+        right: 220px;
+        top: 24px;
+        cursor: pointer;
+        background-color: #3169bc;
+        border-right: solid 1px #03abf6;
+        border-radius: 4px 0 0 4px;
+    }
+    #home .fa{
+        font-size: 35px;
+        color: #FFF;
+    }
+    #home > a#home-link{
+        margin: 5px 8px;
+        display: block;
+    }
+    #menuToggle{
+        position: absolute;
+        height: 45px;
+        width: 50px;
+        right: 170px;
+        z-index: 1001;
+        top: 24px;
+        cursor: pointer;
+        background-color: #3169bc;
+        border-radius: 0 4px 4px 0;
+    }
+    #menuToggle.active{
+
+    }
+    #menuToggle .i{
+        font-size: 35px;
+        width: 40px;
+        height: 35px;
+        margin: 5px;
+    }
+    #menuToggle .i > .over {
+        position: absolute;
+        left: 9px;
+        top: 5px;
+    }
+    #menuToggle .i > .fa-bars{
+        color: #FFF;
+    }
+    #menuToggle.active .i > .fa-bars,
+    #menuToggle .i>.fa-times {
+        color: transparent;
+    }
+    #menuToggle.active .i > .fa-times {
+        color: #fff;
+        color: rgba(255,255,255,0.6);
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    #marcas img{
+
+    }
+    header #cont-slider{
+        display: none;}
+    .menu-xs{
+        background-color: #3169bc;
+    }
+}
+.breadcrumbs{
+    background-color: #f5f5f5;
+    line-height: 1;
+    padding: 10px 0;
+}
+.cont-miga{}
+.miga{}
+.miga-activa{
+    font-weight: 700;
+}
+
+
+/* Home */
+#main,
+.main{
+    margin-bottom: 30px;
+}
+#main h2{
+    text-transform: uppercase;
+    color: #28448e;
+}
+#main .descripcion{
+    margin: 15px 0;
+    font-size: 17px;
+    text-align: justify;
+}
+.descripcion h1{
+    float: left;
+    margin: 0 5px 0 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.btn-home{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+figure.effect-oscar {
+    background: -webkit-linear-gradient(45deg,#011545 0,#044e70 40%,#000536 100%);
+    background: linear-gradient(45deg,#011545 0,#044e70 40%,#000536 100%);
+}
+
+
+figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    background: #3085a3;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+figure.effect-oscar figcaption {
+    padding: 3em;
+    background-color: rgba(7, 34, 146, 0.1);
+    -webkit-transition: background-color 0.35s;
+    transition: background-color 0.35s;
+}
+
+
+
+figure figcaption, article figure figcaption > a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+figure figcaption {
+    padding: 2em;
+    color: #fff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+}
+#main figure h2{
+    margin: 130px 0 0 0;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px #000;
+}
+
+#main figure h3{
+    margin: 130px 0 0 0;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px #000;
+}
+#main figure h3{
+    margin: 130px 0 0 0;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px #000;
+}
+figure.effect-oscar h2 {
+    margin: 0% 0 10px 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+
+figure.effect-oscar:hover h2 {
+    -webkit-transform: translate3d(0,50%,0);
+    transform: translate3d(0,50%,0);
+}
+
+
+
+figure figcaption p{
+    margin-top: 15%;
+}
+figure.effect-oscar:hover img {
+    opacity: 0.4;
+}
+
+
+
+
+figure.effect-oscar img {
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+
+figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+
+figure.effect-oscar figcaption::before, figure.effect-oscar p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+
+
+
+
+figure.effect-oscar:hover figcaption>div.btn-entrar{
+    opacity: 1;
+    top: 50px;
+    -webkit-transform: translate3d(0,20%,0);
+            transform: translate3d(0,20%,0);
+}
+
+
+
+
+
+figure.effect-oscar figcaption > div.btn-entrar {
+    font-size: 15px;
+    position: relative;
+    z-index: 1000;
+    opacity: 0;
+    height: 100px;
+    color:#fff;
+    float: left;
+    width: 67px;
+    left: -10px;
+    -webkit-transition: opacity .35s;
+            transition: opacity .35s;
+    margin: 0 0 10px 50px;
+    -webkit-transition: -webkit-transform .35s;
+            transition: transform .35s;
+    -webkit-transform: translate3d(0,100%,0);
+            transform: translate3d(0,100%,0);
+}
+
+
+
+
+figure.effect-oscar figcaption > div.btn-entrar a{
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+
+figure.effect-oscar figcaption > div.btn-entrar a.entrar.text{
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*  /////// OSCAR 2 ////////////// */
+
+figure.effect-oscar2:hover figcaption::before,
+figure.effect-oscar2:hover p {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+ figure.effect-oscar2 {
+        background: -webkit-linear-gradient(45deg,#011545 0,#044e70 40%,#000536 100%);
+        background: linear-gradient(45deg,#011545 0,#044e70 40%,#000536 100%);
+    }
+
+ figure.effect-oscar2 figcaption {
+        padding: 3em;
+        background-color: rgba(7, 34, 146, 0.1);
+        -webkit-transition: background-color 0.35s;
+        transition: background-color 0.35s;
+    }
+figure figcaption, article figure figcaption > a{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+figure.effect-oscar2 h3 {
+        margin: 0% 0 10px 0;
+        -webkit-transition: -webkit-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform: none;
+        transform: none;
+        -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    }
+
+figure.effect-oscar2:hover h3 {
+        -webkit-transform: none;
+        transform: none;
+        -webkit-transform: translate3d(0,-40%,0);
+            transform: translate3d(0,-40%,0);
+    }
+    /*
+    figure.effect-oscar2 h3 {
+        -webkit-transform: none;
+        transform: none;
+        -webkit-transform: translate3d(0,80%,0);
+    transform: translate3d(0,80%,0);
+    } */
+
+
+figure.effect-oscar2:hover img {
+        opacity: 0.4;
+    }
+    figure.effect-oscar2 img {
+        opacity: 0.9;
+        -webkit-transition: opacity 0.6s;
+        transition: opacity 0.6s;
+    }
+
+
+figure.effect-oscar2 figcaption::before, figure.effect-oscar2 p {
+        opacity: 0;
+        -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+        transition: opacity 0.6s, transform 0.6s;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    figure.effect-oscar2:hover figcaption>div.btn-entrar {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transform: translate3d(0,5%,0);
+    transform: translate3d(0,5%,0);
+
+    }
+
+    figure.effect-oscar2:hover figcaption>div.btn-entrar{
+        opacity: 1;
+       
+    }
+
+ figure.effect-oscar2 figcaption > div.btn-entrar {
+        top: 20px;
+        font-size: 15px;
+        position: relative;
+        z-index: 1000;
+        opacity: 1;
+        height: 100px;
+        color:#fff;
+        float: left;
+        width: 67px;
+        left: 80px;
+        -webkit-transition: opacity .6s;
+        transition: opacity .6s;
+        margin: 0 0 10px 35px;
+        -webkit-transition: -webkit-transform .60s;
+        transition: transform .60s;
+        -webkit-transform: translate3d(0,80%,0);
+        transform: translate3d(0,80%,0);
+    }
+
+
+figure.effect-oscar2 figcaption > div.btn-entrar a{
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+    }
+    figure.effect-oscar2 figcaption > div.btn-entrar a.entrar.text{
+        display: inline-block;
+        text-align: center;
+    }
+
+
+/* ///////fin oscar 2 /////////// */
+
+
+
+/* ///////// OSCAR2 MAX-WIDTH ////////// */
+
+ figure.effect-oscar3 {
+        background: -webkit-linear-gradient(45deg,#011545 0,#044e70 40%,#000536 100%);
+        background: linear-gradient(45deg,#011545 0,#044e70 40%,#000536 100%);
+    }
+ figure.effect-oscar3 figcaption {
+        padding: 3em;
+        background-color: rgba(7, 34, 146, 0.1);
+        -webkit-transition: background-color 0.35s;
+        transition: background-color 0.35s;
+    }
+ figure.effect-oscar3 h2 {
+        margin: 0% 0 10px 0;
+        -webkit-transition: none;
+        transition: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+  figure.effect-oscar3:hover h2 {
+        -webkit-transform: none;
+        transform: none;
+    }
+figure.effect-oscar3 h2 {
+        -webkit-transform: none;
+        transform: none;
+    }
+figure.effect-oscar3 img {
+        opacity: 0.4;
+    }
+    figure.effect-oscar3 img {
+        opacity: 0.9;
+        -webkit-transition: opacity 0.35s;
+        transition: opacity 0.35s;
+    }
+
+ figure.effect-oscar3 figcaption::before, figure.effect-oscar2 p {
+        opacity: 1;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+
+    
+figure.effect-oscar3 figcaption > div.btn-entrar {
+        font-size: 15px;
+        position: relative;
+        z-index: 1000;
+        opacity: 1;
+        height: 100px;
+        color:#fff;
+        float: left;
+        width: 67px;
+        left: 15px;
+        margin: 0 0 10px 18px;
+        -webkit-transition: none;
+                transition: none;
+        -webkit-transition: none;
+                transition: none;
+        -webkit-transform: none;
+                 transform: none;
+    }
+ figure.effect-oscar3 figcaption > div.btn-entrar a{
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+    }
+    figure.effect-oscar3 figcaption > div.btn-entrar a.entrar.text{
+        display: inline-block;
+        text-align: center;
+    }
+
+figure.effect-oscar3 figcaption > h3 {
+    margin: 0% 0 10px 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,-300%,0);
+    transform: translate3d(0,-300%,0);
+}
+
+figure.effect-oscar3 figcaption::before, figure.effect3-oscar p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+
+figure.effect-oscar3 figcaption > div.btn-entrar{
+    opacity: 1;
+  
+    -webkit-transform: translate3d(0,-130%,0);
+            transform: translate3d(0,-130%,0);
+}
+
+
+/* ///////// FIN OSCAR2 MAX-WIDTH ////////// */
+
+
+@media (max-width: 768px) {
+    figure.effect-oscar {
+        background: -webkit-linear-gradient(45deg,#011545 0,#044e70 40%,#000536 100%);
+        background: linear-gradient(45deg,#011545 0,#044e70 40%,#000536 100%);
+    }
+
+   
+
+
+    figure {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        background: #3085a3;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    figure.effect-oscar figcaption {
+        padding: 3em;
+        background-color: rgba(7, 34, 146, 0.1);
+        -webkit-transition: background-color 0.35s;
+        transition: background-color 0.35s;
+    }
+
+   
+
+
+    figure figcaption, article figure figcaption > a{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    figure figcaption {
+        padding: 2em;
+        color: #fff;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    #main figure h2{
+        margin: 0;
+        color: #fff;
+        font-weight: 700;
+        text-shadow: 0px 0px 10px #000;
+    }
+
+    figure.effect-oscar h2 {
+        margin: 0% 0 10px 0;
+        -webkit-transition: none;
+        transition: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+   figure.effect-oscar2 h2 {
+        margin: 0% 0 0 0;
+        -webkit-transition: none;
+        transition: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    figure.effect-oscar:hover h2 {
+        -webkit-transform: none;
+        transform: none;
+    }
+    figure.effect-oscar h2 {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+  
+    
+
+
+    figure figcaption p{
+        margin-top: 15%;
+    }
+    figure.effect-oscar img {
+        opacity: 0.4;
+    }
+    figure.effect-oscar img {
+        opacity: 0.9;
+        -webkit-transition: opacity 0.35s;
+        transition: opacity 0.35s;
+    }
+
+    
+
+    figure img {
+        position: relative;
+        display: block;
+        min-height: 100%;
+        max-width: 100%;
+        opacity: 0.8;
+    }
+    figure.effect-oscar:hover figcaption::before,
+    figure.effect-oscar p {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    figure.effect-oscar figcaption::before, figure.effect-oscar p {
+        opacity: 1;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+   
+
+
+    figure.effect-oscar:hover figcaption>div.btn-entrar {
+    opacity: 1;
+    top: 50px;
+    -webkit-transform: none;
+    transform: none;
+      }
+
+    figure.effect-oscar figcaption>div.btn-entrar{
+        opacity: 1;
+        top: 50px;
+        -webkit-transform: none;
+                transform: none;
+    }
+
+    
+
+
+
+    figure.effect-oscar figcaption > div.btn-entrar {
+        font-size: 15px;
+        position: relative;
+        z-index: 1000;
+        opacity: 1;
+        height: 100px;
+        color:#fff;
+        float: left;
+        width: 67px;
+        left: 15px;
+        margin: 0 0 10px 35px;
+        -webkit-transition: none;
+                transition: none;
+        -webkit-transition: none;
+                transition: none;
+         -webkit-transform: none;
+                 transform: none;
+    }
+
+    
+
+
+    figure.effect-oscar figcaption > div.btn-entrar a{
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+    }
+    figure.effect-oscar figcaption > div.btn-entrar a.entrar.text{
+        display: inline-block;
+        text-align: center;
+    }
+
+   
+    #main figure h2{
+    margin: 130px 0 0 0;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px #000;
+    }
+
+    figure.effect-oscar:hover h2 {
+    -webkit-transform: translate3d(0,50%,0);
+    transform: translate3d(0,50%,0);
+    }
+
+
+}
+
+#main figure h2{
+    margin: 130px 0 0 0;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px #000;
+}
+
+
+a.logo-oceanos{
+    text-indent: -9999px;
+    color: #fff;
+    display: block;
+    height: 67px;
+    width: 67px;
+    background: url(../img/logos-oceanografia.png) no-repeat;
+    opacity: .8;
+}
+a.logo-oceanos.boyas{background-position: 0 0;}
+a.logo-oceanos.mareas{background-position: 0 -67px;}
+a.logo-oceanos:hover{
+    opacity: 1;
+}
+
+a.microalgas{
+    text-indent: -9999px;
+    color: #fff;
+    display: block;
+    height: 67px;
+    width: 67px;
+    background: url(../img/logo-microalgas.png) no-repeat;
+    opacity: .8;
+}
+
+a.microalgas:hover{
+    opacity: 1;
+}
+
+a.microalgas_dark{
+    text-indent: -9999px;
+    color: #fff;
+    display: block;
+    height: 67px;
+    width: 67px;
+    background: url(../img/logo-microalgas.png) no-repeat;
+    opacity: .8;
+}
+
+a.microalgas_dark:hover{
+    opacity: 1;
+}
+
+a.logo-pia{
+    text-indent: -9999px;
+    color: #fff;
+    display: block;
+    height: 200px;
+    width: 200px;
+    background: url(../img/logos/Logo_PIA.png) no-repeat;
+    opacity: .8;
+}
+
+a.logo-pia:hover{
+    opacity: 1;
+}
+
+a.logos-meteo{
+    text-indent: -9999px;
+    display: block;
+    height: 67px;
+    width: 67px;
+    background: url(../img/logos-meteorologia.png) no-repeat;
+    opacity: .8;
+}
+a.logos-meteo.estacion{background-position: 0 0;}
+a.logos-meteo.uv{background-position: 0 -67px;}
+a.logos-meteo:hover{
+    opacity: 1;
+}
+
+a#home-btn-boyas,
+a#home-btn-estaciones{
+    text-indent: -9999px;
+    display: inline-block;
+}
+.saber-mas{
+    background: #eaf9ff;
+    margin: 30px 0;
+    float: left;
+    width: 100%;
+    border-radius: 4px;
+}
+.saber-mas{}
+.saber-mas_img{
+    float: left;
+    height: 80px;
+    width: 105px;
+    border-radius: 4px 0 0 4px;
+}
+.saber-mas_content{
+    float: left;
+    /*width: 710px;*/
+    width: 650px;
+    padding: 0 15px;
+    height: 80px;
+    line-height: 1.3;
+    display: table;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 700;
+}
+.saber-mas_content div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.saber-mas_content p{
+    margin: none;
+}
+
+.saber-mas-link {
+    /*float: left;*/
+    float: right;
+    width: 130px;
+    text-align: center;
+    /*margin: 25px 0;*/
+    margin: 30px 20px 0 0;
+}
+.saber-mas-link a{
+    background: #3baeda;
+    color: #FFF;
+    padding: 3px 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.modal-title{
+    font-weight: 700;
+    font-style: italic;
+}
+.modal-body{
+    text-align: justify;
+    padding: 25px;
+}
+.carousel-control:focus, .carousel-control:hover {
+    color: #fff;
+    text-decoration: none;
+    filter: alpha(opacity=90);
+    outline: 0;
+    opacity: 0;
+}
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    filter: none;
+    background-repeat: no-repeat;
+}
+.carousel-control:focus,
+.carousel-control:hover {
+    color: #3169bc;
+    opacity: 1;
+}
+.carousel-control {
+    left: -37px;
+    width: 4%;
+    color: #3169bc;
+}
+.carousel-control.right {
+    right: -37px;
+}
+
+.carousel-indicators .active {
+    background-color: #3169bc;
+}
+.carousel-indicators li {
+    border: 1px solid #3baeda;
+}
+@media screen and (min-width: 768px){
+    .carousel-indicators {
+        bottom: -45px;
+    }
+}
+
+
+
+/* Mapa
+------------------------------------------------------------------------------*/
+#btn-descarga{
+    background: url(../img/btn-descarga.png) no-repeat;
+    display: block;
+    width: 145px;
+    height: 29px;
+    text-indent: -9999px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+#btn-descarga:hover{
+    background: url(../img/btn-descarga-over.png) no-repeat;
+}
+#btn-descarga-grafico{
+    margin-top: 30px;
+    float: right;
+}
+@media (max-width: 768px) {
+    #btn-descarga-grafico{
+    width: 100%;
+    padding: 15px 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    }
+}
+#btn-descarga-grafico-hist{
+    float: right;
+}
+@media (max-width: 768px) {
+    #btn-descarga-grafico-hist{
+        width: 100%
+    }
+}
+.mapa{
+    position: relative;
+}
+ul.map-marker{
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.map-marker>li{
+    width: 150px;
+}
+ul.map-marker li i:hover{
+    color: #b10000;
+}
+ul.map-marker li i{
+    font-size: 13px;
+    color: #f73a00;
+}
+ul.map-marker>li span{
+    font-size: 9px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0c3378;
+    -webkit-transition: all .4s linear;
+            transition: all .4s linear;
+    padding: 2px 4px;
+    margin: 0 2px;
+    position: relative;
+    top: 0;
+}
+/*
+ul.map-marker>li span:hover{
+    background-color: #047cca;
+}*/
+ul.map-marker li ul.activo{
+    /*display: block;*/
+}
+ul.map-marker li ul{
+    list-style: none;
+    /*display: none;*/
+}
+li.icon-map{
+    position: absolute;
+    z-index: 999;
+    font-weight: 700;
+    height: 22px;
+    width: 22px;
+    background: url(../img/iconos-mapa.png) no-repeat;
+    cursor: pointer;
+    -webkit-border-radius:11px;
+            border-radius: 11px;
+    -webkit-box-shadow: 0px 0px 1px #000000;
+            box-shadow: 0px 0px 1px #000000;
+}
+li.icon-map a{
+    float: left;
+    text-indent: -9999px;
+    width: 21px;
+}
+#info-map{
+    list-style: none;
+    margin: 15px 0;
+}
+li.icon-info-map {
+    margin-bottom: 5px;
+    z-index: 999;
+    height: 22px;
+    width: 22px;
+    background: url(../img/iconos-mapa.png) no-repeat;
+}
+li.icon-info-map span{
+    font-weight: 700;
+    margin-left: 32px;
+}
+
+/* Tongoy*/
+ul#map-tongoy{
+    left: 125px;
+    top: 209px;
+}
+ul#map-tongoy li.icon-map-boya{left: -70px; top:0;}
+ul#map-tongoy li.icon-map-estacion{left: -40px; top:0; }
+
+/* Dichato*/
+ul#map-dichato{
+    top: 325px;
+    left: 75px;
+}
+ul#map-dichato li.icon-map-estacion{left: -35px; top:0 }
+ul#map-dichato li.icon-map-uv{left: -40px; top:5px;}
+
+
+/* Concepción*/
+ul#map-concepcion{
+    top: 337px;
+    left: 129px;
+}
+ul#map-concepcion li.icon-map-uv{left: 86px; top: 0px;}
+
+/* Reloncavi */
+ul#map-reloncavi{
+    top: 420px;
+    left: 150px;
+}
+ul#map-reloncavi li.icon-map-boya{left: -105px; top:0;}
+ul#map-reloncavi li.icon-map-estacion{left: -75px; top:0;}
+ul#map-reloncavi li.icon-map-marea-1{left: -45px; top:0;}
+
+/* Aysen */
+ul#map-aysen{
+    top: 445px;
+    left: 150px;
+}
+ul#map-aysen li.icon-map-marea-1{left: -75px; top:5px; }
+ul#map-aysen li.icon-map-marea-2{left: -45px; top:5px; }
+
+/* Puyuhuapi */
+ul#map-puyuhuapi{
+    top: 480px;
+    left: 150px;
+}
+ul#map-puyuhuapi li.icon-map-boya{left: -105px; top:5px;}
+ul#map-puyuhuapi li.icon-map-estacion{left: -75px; top: 5px;}
+ul#map-puyuhuapi li.icon-map-marea{left: -45px; top:5px;}
+
+/* Tortel */
+ul#map-tortel{
+    top: 550px;
+    left: 158px;
+}
+ul#map-tortel li.icon-map-estacion{left: -75px; top:5px;}
+ul#map-tortel li.icon-map-marea{left: -45px; top:5px;}
+
+li.icon-map-boya{background-position: 0 0;}
+li.icon-map-boya:hover{background-position: -22px 0;}
+li.icon-map-estacion{background-position: 0 -22px;}
+li.icon-map-estacion:hover{background-position: -22px -22px;}
+li.icon-map-marea-1,li.icon-map-marea-2,
+li.icon-map-marea{background-position: 0 -44px;}
+li.icon-map-marea:hover{background-position: -22px -44px;}
+li.icon-map-uv{background-position: 0 -66px;}
+li.icon-map-uv:hover{background-position: -22px -66px;}
+
+#calendario tfoot{
+    background-color: #bedaf6;
+}
+
+.datepicker-inline {
+    width: 100%;
+}
+.datepicker table {
+    width: 100%;
+}
+.datepicker{
+    padding: 15px 0;
+    margin: 0;
+}
+th.prev,
+th.next{
+    background: #bedaf6;
+}
+
+.datepicker th{
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+}
+.datepicker-switch{
+    background-color: #bedaf6;
+}
+
+#dia #alba,
+#dia #ocaso{
+    padding: 5px;
+    margin-top: 5px;
+    background-color: rgb(204, 204, 204);
+}
+/*
+    Page
+------------------------------------------------------------------------------*/
+.titulo_paginas{
+    border-bottom: solid 1px #e7e7e7;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    color: #2f4c76;
+}
+.link-equipo:hover{
+    font-weight: 700;
+    text-decoration: none;
+}
+.link-equipo img{
+    border: solid 10px #013b6b;
+    border-radius: 50%;
+}
+
+.titulo_eqipo{
+    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    bottom: 0;
+    position: relative;
+}
+.titulo_modal{
+    color: #25458e;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.block-content,
+.modal span,
+.block-info{
+    width: 100%;
+    float: left;
+}
+.block-content{
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+.modal .block-content span{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #003a6a;
+    padding: 2px 10px;
+}
+.block-info{
+    padding: 10px;
+}
+
+/*estadisticas de uso */
+.box-estadisticas{
+    margin-top: 30px;
+    background: #f3f3f3;
+    padding: 0 15px 15px;
+}
+.box-estadisticas .cabecera{
+    background-color: #e4e4e4;
+    border-bottom: solid 1px #d6d6d6;
+}
+.box-estadisticas h3{
+    margin-bottom: 0;
+}
+.box-estadisticas h3 > div{
+    background: #cacaca;
+    padding: 5px;
+}
+/*
+    Template Boyas Oceanograficas - Mareas y Estaciones Meteorologia - UV
+------------------------------------------------------------------------------*/
+#CalendarioLunarTutiempo{
+    margin: 15px auto 30px auto;
+}
+.contenedor-estacion{
+    margin: 30px 0;
+}
+.contenedor-estacion_header{
+    color: #FFF;
+    padding: 15px;
+    background-color: #efefef;
+}
+
+.icon-uv,
+.icon-mareas{
+    text-indent: -9999px;
+    display: block;
+}
+.icon-microalgas_dark{
+    text-indent: -9999px;
+    display: block;
+}
+.icon-logo-pia{
+    text-indent: -9999px;
+    display: block;
+}
+#icon-oceanografia,
+#icon-mareas,
+.icon-mareas,
+.icon-uv,
+#icon-meteorologia,
+#icon-uv{
+    height: 67px;
+    width: 67px;
+    margin: 0 auto;
+}
+
+#icon-microalgas_dark,
+.icon-microalgas_dark{
+    background: url(../img/logo-microalgas-dark.png) no-repeat;
+    height: 67px;
+    width: 67px;
+    margin: 0 auto;
+}
+
+#icon-logo-pia,
+.icon-logo-pia{
+    background: url(../img/logos/Logo_PIA-pequeno.jpg) no-repeat;
+    height: 300px;
+    width: 300px;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    margin: 0 auto;
+}
+
+#icon-logo-Cabo-de-hornos,
+.icon-logo-Cabo-de-hornos{
+    background: url(../img/logos/Logo_Cabo_de_Hornos-pequeno.jpg) no-repeat;
+    height: 300px;
+    width: 300px;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    margin: 0 auto;
+}
+
+
+
+#icon-logo-Armada,
+.icon-logo-Armada{
+    background: url(../img/logos/logo_armada-pequena.png) no-repeat;
+    height: 300px;
+    width: 300px;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    margin: 0 auto;
+}
+
+
+
+
+
+
+#icon-oceanografia,
+#icon-mareas,
+.icon-mareas{
+    background: url(../img/icon-header-oceanografia.png) no-repeat;
+}
+#icon-meteorologia,
+.icon-uv,
+#icon-uv{
+    background: url(../img/icon-header-meteorologia.png) no-repeat;
+}
+#icon-meteorologia{
+    background-position: 0 0;
+}
+#icon-oceanografia{
+    background-position: 0 0;
+}
+#icon-mareas,
+.icon-mareas{
+    background-position: 0 -67px;
+}
+.icon-uv,
+#icon-uv{
+    background-position: 0 -67px;
+}
+
+
+a.volver{
+    color: #7f7f7f;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1;
+    display: block;
+    width: 50px;
+    margin: 10px auto 0 auto;
+}
+a.volver:hover{
+    color: #01abf6;
+}
+@media (max-width: 768px) {
+    a.volver{
+        display: none !important;
+    }
+}
+
+.contenedor-sensores{
+    background-color: #f7f7f7;
+    width: 100%;
+    float: left;
+    padding: 60px 0;
+}
+@media (max-width: 768px) {
+    .contenedor-estacion_header h2{
+        text-align: center;
+        font-size: 25px;
+    }
+}
+.contenedor-estacion_header h2{
+    margin-top: 0;
+    text-transform: uppercase;
+    color: #7f7f7f;
+}
+
+.list-mareas{
+
+}
+.list-mareas ul{
+    padding: 0 0 0 10px;
+}
+.box-list-mareas > ul > li{
+    font-weight: 700;
+    color: #484848;
+}
+
+a.btn-estacion{
+
+}
+a.btn-estacion-uv:hover div.nombre-estacion,
+a.btn-estacion-uv.current div.nombre-estacion,
+a.btn-estacion-mareas:hover div.nombre-estacion,
+a.btn-estacion-mareas.current div.nombre-estacion,
+a.btn-estacion:hover div.nombre-estacion,
+a.btn-estacion.current div.nombre-estacion{
+    background-color: #01abf6;
+    color: #fff;
+}
+
+/* Estaciones meteorologicas y oceanograficas */
+div.icon-info-estacion{
+    float: left;
+    width: 100%;
+}
+div.nombre-estacion{
+    width: 100%;
+    float: left;
+    padding: 5px;
+    font-weight: 700;
+    color: #7f7f7f;
+    font-size: 16px;
+    transition: all .3s linear;
+    line-height: 1.2;
+}
+@media (max-width: 768px) {
+    div.nombre-estacion{
+        padding: 15px 5px;
+        text-align: center;
+        background: #f6f6f6;
+    }
+}
+
+div.online,
+div.offline{
+    float: left;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 8px 5px 0 0;
+}
+div.online{
+    background-color: #41fb6f;
+}
+div.offline{
+    background-color: #dc203a;
+}
+
+.separador-top{
+    width: 100%;
+    border-top: solid 1px #c0c0c0;
+    margin-top: 15px;
+}
+.info-puntos .offline,
+.info-puntos .online{
+    margin-top: 6px;
+}
+
+.nombre-sensor{
+    text-align: center;
+    color: #7f7b9c;
+    font-weight: 700;
+}
+
+
+#boyas{}
+#estaciones{}
+
+#boyas .contenedor-sensores div[class|="col-md"],
+#estaciones .contenedor-sensores div[class|="col-md"]{
+    margin-bottom: 30px;
+}
+
+#boyas .titulo,
+#estaciones .titulo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+h1.titulo-icon-boyas,
+h1.titulo-icon-uv,
+h1.titulo-icon-estaciones,
+h1.titulo-icon-mareas{margin-left: 40px;}
+
+h1.titulo-icon-boyas::before,
+h1.titulo-icon-uv:before,
+h1.titulo-icon-estaciones:before,
+h1.titulo-icon-mareas:before{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 15px;
+    top: 53px;
+}
+h1.titulo-icon-boyas::before{content: url(../img/icono-titulos-oceano.png)}
+h1.titulo-icon-uv::before{content: url(../img/icono-titulos-uv.png)}
+h1.titulo-icon-estaciones::before{content: url(../img/icono-titulos-meteoro.png)}
+h1.titulo-icon-mareas::before{content: url(../img/icono-titulos-marea.png)}
+
+#boyas .content,
+#estaciones .content,
+#boya-sensores .content,
+#estacion-sensores .content{
+    background-color: #f7f7f7;
+}
+#boyas h1,
+#estaciones h1,
+#boya-sensores h1,
+#estacion-sensores h1,
+#grafico-general h1,
+#grafico-historico h1{
+    /*text-transform: uppercase;*/
+    float: left;
+    font-size: 27px;
+    margin:40px 0 0 0;
+}
+
+#sensores h1,
+#grafico-general h1,
+#grafico-historico h1{
+    margin:56px 0 0 0;
+}
+#sensores h1{
+    margin:56px 0 0 47px;
+    color:#7f7f7f;
+}
+#boya-sensores h1,
+#estacion-sensores h1{
+    margin:56px 0 0 47px;
+    color:#7f7f7f;
+}
+#grafico-general h1,
+#grafico-historico h1{
+    color: #42a227
+}
+
+@media (max-width: 768px) {
+    #sensores h1,
+    #grafico-general h1,
+    #grafico-historico h1{
+        margin:20px 0 10px 0;
+        font-size: 20px;
+    }
+}
+
+#boyas h1,
+#estaciones h1{
+    margin: 0 0 30px 0;
+    padding: 0;
+    color: #3569ac;
+    font-weight: 700;
+}
+div.volver{
+    float: right;
+    margin-top: 66px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+@media (max-width: 768px) {
+    div.volver{
+        display: none;
+    }
+}
+#coordenadas{
+    float: left;
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+}
+/*#coordenadas:before{
+    content: url(../img/brujula.png);
+    height: 21px;
+    width: 21px;
+    margin: 3px 10px 0 0;
+    position: relative;
+    top: 4px;
+}*/
+.content{
+    padding: 15px;
+    border-top: solid 2px #e6e6e6;
+    border-bottom: solid 2px #e6e6e6;
+    margin-bottom: 15px;
+}
+a.estaciones{
+    background: url(../img/iconos-estaciones.png) no-repeat;
+    display: block;
+    width: 71px;
+    height: 71px;
+    float: left;
+    text-indent: -9999px;
+}
+a.icon-boyas-online{background-position: 0 0;}
+a.icon-boyas-online:hover{background-position: -73px 0;}
+a.icon-boyas-offline{background-position: -146px 0;}
+a.icon-boyas-offline:hover{background-position: -219px 0;}
+
+a.icon-estaciones-online{background-position: 0 -71px;}
+a.icon-estaciones-online:hover{background-position:  -73px -71px;}
+a.icon-estaciones-offline{background-position: -146px  -71px;}
+a.icon-estaciones-offline:hover{background-position: -219px  -71px;}
+
+a.icon-mareas-online{background-position: 0 -142px;}
+a.icon-mareas-online:hover{background-position: -73px -142px;}
+a.icon-mareas-offline{background-position: -146px -142px;}
+a.icon-mareas-offline:hover{background-position: -219px -142px;}
+a.icon-mareas-inactivo{background-position: -290px -142px;cursor: no-drop;}
+
+a.icon-uv-online{background-position: 0 -213px;}
+a.icon-uv-online:hover{background-position: -73px -213px;}
+a.icon-uv-offline{background-position: -146px -213px;}
+a.icon-uv-offline:hover{background-position: -219px -213px;}
+a.icon-uv-inactivo{background-position: -290px -213px;cursor: no-drop;}
+
+
+
+
+#estaciones a.icon-sensor-estaciones,
+#estacion-sensores a.icon-sensor-estaciones,
+#boyas a.icon-sensor-boyas,
+#boya-sensores a.icon-sensor-boyas{
+    display: block;
+    width: 115px;
+    height: 115px;
+    border-radius: 57px;
+    margin: 0 auto;
+    text-indent: -9999px;
+}
+div.icon-sensor-grafico,
+#estacion-sensores a.icon-sensor-estaciones,
+#estaciones a.icon-sensor-estaciones{
+    background: url(../img/iconos-meteorologia.png) no-repeat;
+}
+div.icon-sensor-grafico-boyas,
+#boya-sensores a.icon-sensor-boyas,
+#boyas a.icon-sensor-boyas{
+    background: url(../img/iconos-oceanografia.png) no-repeat;
+}
+
+
+/* icon meteorologia */
+div.icon-sensor-grafico.viento,
+#estacion-sensores a.viento,
+#estaciones a.viento{background-position: 0 0;}
+#estacion-sensores a.viento:hover,
+#estaciones a.viento:hover{background-position: -115px 0;}
+
+div.icon-sensor-grafico.radiacion-par,
+#estacion-sensores a.radiacion-par,
+#estaciones a.radiacion-par{background-position: 0 -115px;}
+#estacion-sensores a.radiacion-par:hover,
+#estaciones a.radiacion-par:hover{background-position: -115px -115px;}
+
+div.icon-sensor-grafico.presion-atmosferica,
+#estacion-sensores a.presion-atmosferica,
+#estaciones a.presion-atmosferica{background-position: 0 -230px}
+#estacion-sensores a.presion-atmosferica:hover,
+#estaciones a.presion-atmosferica:hover{background-position: -115px -230px}
+
+div.icon-sensor-grafico.temperatura,
+#estacion-sensores a.temperatura,
+#estaciones a.temperatura{background-position: 0 -345px;}
+#estacion-sensores a.temperatura:hover,
+#estaciones a.temperatura:hover{background-position: -115px -345px;}
+
+div.icon-sensor-grafico.humedad-relativa,
+#estacion-sensores a.humedad-relativa,
+#estaciones a.humedad-relativa{background-position: 0 -460px;}
+#estacion-sensores a.humedad-relativa:hover,
+#estaciones a.humedad-relativa:hover{background-position: -115px -460px;}
+
+div.icon-sensor-grafico.radiacion-solar,
+#estacion-sensores a.radiacion-solar,
+#estaciones a.radiacion-solar{background-position: 0 -575px;}
+#estacion-sensores a.radiacion-solar:hover,
+#estaciones a.radiacion-solar:hover{background-position: -115px -575px;}
+
+div.icon-sensor-grafico.indice-uv,
+div.icon-sensor-grafico.uv,
+#estacion-sensores a.indice-uv,
+#estaciones a.indice-uv,
+#estaciones a.uv{background-position: 0 -690px;}
+#estacion-sensores a.indice-uv:hover,
+#estaciones a.indice-uv:hover,
+#estaciones a.uv:hover{background-position: -115px -690px;}
+
+div.icon-sensor-grafico.precipitacion,
+#estacion-sensores a.precipitacion,
+#estaciones a.precipitacion{background-position: 0 -805px}
+#estacion-sensores a.precipitacion:hover,
+#estaciones a.precipitacion:hover{background-position: -115px -805px}
+
+div.icon-sensor-grafico.rafaga-del-viento,
+#estacion-sensores a.rafaga-del-viento,
+#estaciones a.rafaga-del-viento{background-position: 0 -920px;}
+#estacion-sensores a.rafaga-del-viento:hover,
+#estaciones a.rafaga-del-viento:hover{background-position: -115px -920px;}
+
+div.icon-sensor-grafico.punto-de-rocio,
+#estacion-sensores a.punto-de-rocio,
+#estaciones a.punto-de-rocio{background-position: 0 -1035px;}
+#estacion-sensores a.punto-de-rocio:hover,
+#estaciones a.punto-de-rocio:hover{background-position: -115px -1035px;}
+
+div.icon-sensor-grafico.meteorograma,
+#estacion-sensores a.meteorograma,
+#estaciones a.meteorograma{background-position: 0 -1150px;}
+#estacion-sensores a.meteorograma:hover,
+#estaciones a.meteorograma:hover{background-position: -115px -1150px;}
+
+/* icon oceanografia */
+div.icon-sensor-grafico-boyas.oxigeno-disuelto,
+#boya-sensores a.oxigeno-disuelto,
+#boyas a.oxigeno-disuelto{background-position: 0 0;}
+#boya-sensores a.oxigeno-disuelto:hover,
+#boyas a.oxigeno-disuelto:hover{background-position: -115px 0;}
+
+div.icon-sensor-grafico-boyas.temperatura,
+#boya-sensores a.temperatura,
+#boyas a.temperatura{background-position: 0 -115px;}
+#boya-sensores a.temperatura:hover,
+#boyas a.temperatura:hover{background-position: -115px -115px;}
+
+div.icon-sensor-grafico-boyas.cdom,
+#boya-sensores a.cdom,
+#boyas a.cdom{background-position: 0 -230px;}
+#boya-sensores a.cdom:hover,
+#boyas a.cdom:hover{background-position: -115px -230px;}
+
+div.icon-sensor-grafico-boyas.saturacion-de-oxigeno,
+#boya-sensores a.saturacion-de-oxigeno,
+#boyas a.saturacion-de-oxigeno{background-position: 0 -345px;}
+#boya-sensores a.saturacion-de-oxigeno:hover,
+#boyas a.saturacion-de-oxigeno:hover{background-position: -115px -345px;}
+
+div.icon-sensor-grafico-boyas.turbidez,
+#boya-sensores a.turbidez,
+#boyas a.turbidez{background-position: 0 -460px;}
+#boya-sensores a.turbidez:hover,
+#boyas a.turbidez:hover{background-position: -115px -460px;}
+
+div.icon-sensor-grafico-boyas.salinidad,
+#boya-sensores a.salinidad,
+#boyas a.salinidad{background-position: 0 -575px;}
+#boya-sensores a.salinidad:hover,
+#boyas a.salinidad:hover{background-position: -115px -575px;}
+
+div.icon-sensor-grafico-boyas.ph,
+#boya-sensores a.ph,
+#boyas a.ph{background-position: 0 -690px;}
+#boya-sensores a.ph:hover,
+#boyas a.ph:hover{background-position: -115px -690px;}
+
+div.icon-sensor-grafico-boyas.nitrato,
+#boya-sensores a.nitrato,
+#boyas a.nitrato{background-position: 0 -805px;}
+#boya-sensores a.nitrato:hover,
+#boyas a.nitrato:hover{background-position: -115px -805px;}
+
+div.icon-sensor-grafico-boyas.fluorescencia,
+#boya-sensores a.fluorescencia,
+#boyas a.fluorescencia{background-position: 0 -920px;}
+#boya-sensores a.fluorescencia:hover,
+#boyas a.fluorescencia:hover{background-position: -115px -920px;}
+
+div.icon-sensor-grafico-boyas.clorofila,
+#boya-sensores a.clorofila,
+#boyas a.clorofila{background-position: 0 -920px;}
+#boya-sensores a.clorofila:hover,
+#boyas a.clorofila:hover{background-position: -115px -920px;}
+
+div.icon-sensor-grafico-boyas.corriente-norte,
+#boya-sensores a.corriente-norte,
+#boyas a.corriente-norte{background-position: 0 -1035px;}
+#boya-sensores a.corriente-norte:hover,
+#boyas a.corriente-norte:hover{background-position: -115px -1035px;}
+
+div.icon-sensor-grafico-boyas.corriente-este,
+#boya-sensores a.corriente-este,
+#boyas a.corriente-este{background-position: 0 -1035px;}
+#boya-sensores a.corriente-este:hover,
+#boyas a.corriente-este:hover{background-position: -115px -1035px;}
+
+
+#ultimo{
+    height: auto;
+    background: #f8f8f8;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+#ultimo:hover{
+    cursor: pointer;
+    background: #f4f4f4;
+}
+#ultimo h4,
+#ultimo h5,
+#ultimo h6{
+    text-align: right;
+    color: #e5a718;
+    float: right;
+}
+#ultimo h4{
+    font-size: 25px;
+    font-weight: 700;
+    float: right;
+}
+#ultimo h5{
+    font-size: 16px;
+    margin: 0;
+    float: right;
+}
+#ultimo h6{
+    text-transform: uppercase;
+    font-size: 20px;
+    float: right;
+}
+sup{
+    font-size: 18px;
+    margin-left: 5px;
+    top: 0;
+}
+
+.popover{
+    border: none;
+    padding: 0;
+}
+.popover.bottom>.arrow {
+    border-bottom-color: #0e3377;
+    border-bottom-color: #0e3377;
+}
+.popover.bottom>.arrow:after {
+    border-bottom-color: #0e3377;
+}
+.popover-title {
+    background-color: #0e3377;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+    color:#FFF;
+}
+
+.icon-sensor-grafico,
+.icon-sensor-grafico-boyas{
+    height: 115px;
+    width: 115px;
+    float: left;
+    background: #f9f9f9;
+}
+#inicial{
+    height: 400px;
+    margin-bottom: 60px;
+}
+#contextual{
+    height: 400px;
+}
+
+#inicial,
+#contextual{
+    float: left;
+    width: 100%;
+    background-color: #fcfcfc;
+}
+#historico{
+    height: 433px;
+}
+.loader{
+    margin: 15% auto;
+    width: 100px;
+    text-align: center;
+}
+
+#contextual .loader{
+    margin: 55% auto;
+}
+.logo-ceaza,
+.logo-copas,
+.logo-oceanografia,
+.logo-usach,
+.logo-cr2{
+    height: 50px;
+    margin-left: 20px;
+    width: 180px;
+}
+
+#grafico-historico .logo-ceaza,
+#grafico-historico .logo-copas,
+#grafico-historico .logo-oceanografia,
+#grafico-historico .logo-usach,
+#grafico-historico .logo-cr2{
+    margin-left: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    #grafico-general .logo-ceaza,
+    #grafico-historico .logo-ceaza{
+        margin: 0 auto;
+        width: 53px;
+    }
+    #grafico-general .logo-copas,
+    #grafico-historico .logo-copas{
+        margin: 0 auto;
+        width: 60px;
+    }
+    #grafico-general .logo-oceanografia,
+    #grafico-historico .logo-oceanografia{
+        margin: 0 auto;
+        width: 178px;
+    }
+    #grafico-general .logo-usach,
+    #grafico-historico .logo-usach{
+        margin: 0 auto;
+        width: 85px;
+    }
+}
+.logo-ceaza{background: url(../img/logos/logo-grafico-ceaza.png) no-repeat;}
+.logo-copas{background: url(../img/logos/logo-grafico-copas.png) no-repeat;}
+.logo-oceanografia{background: url(../img/logos/logo-oceanografia.png) no-repeat;}
+.logo-usach{background: url(../img/logos/logo-usach.png) no-repeat;}
+.logo-cr2{background: url(../img/logos/logo-cr2.png) no-repeat;margin-top:-15px;width:90px; }
+.logo-imar{background: url(../img/logos/imar.png) no-repeat;margin-top:-15px; margin-left:25px; width:128px; height: 50px; }
+.col-xs-12 h1{display:flex;flex-direction:row;}
+
+.btn-sensores{}
+.content-btn-sensores{
+    margin-top: 30px;
+}
+@media (max-width: 768px) {
+    .content-btn-sensores{
+        background: #f7f7f7;
+        padding-top: 15px;
+    }
+}
+.content-btn-sensores div{
+    margin-bottom: 15px;
+}
+.btn-sensor a{
+    display: block;
+    border-radius: 15px;
+    background-color: #ccc;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #FFF;
+    transition: all .3s linear;
+}
+.btn-sensor.current a,
+.btn-sensor a:hover{
+    background-color: #2a94ce;
+    color: #FFF;
+}
+@media (max-width: 768px) {
+    .btn-sensor a{
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
+.btn-historico{
+    display: inline-block;
+    background: #42a227;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    float: right;
+}
+@media (max-width: 768px) {
+    .btn-historico{
+        width: 100%;
+        padding: 15px 5px;
+    }
+}
+.btn-historico:hover{
+    background: #29b900;
+    text-decoration: none;
+    color: #fff;
+}
+.aviso{
+    font-size: 13px;
+    line-height: 1.2;
+    margin: 30px 0 0;
+}
+@media (max-width: 768px) {
+    .aviso{
+        margin: 30px 0;
+    }
+}
+label #mensaje-nombre,
+label #mensaje-email,
+label #mensaje-institucion,
+#mensaje-anio{
+    float: right;
+    color: #f00;
+    margin-left: 10px;
+}
+
+/* Single */
+
+/* category */
+
+/* Contacto */
+.wpcf7{
+    width: 100%;
+    float: left;
+}
+.wpcf7 label.wpcf-label{
+    max-width: none;
+    width: 100%;
+}
+.wpcf7-form-control-wrap {
+    width: 100%;
+    float: left;
+    background-color: rgba(153, 34, 34, 0.09);
+}
+.wpcf7-form-control{
+    width: 100%;
+    float: left;
+    padding: 5px;
+    border: solid 1px #b8b8b8;
+}
+.page-template-template-page-angosta h1{
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+.titulo-participantes{
+  font-size: 15px;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    float: left;
+    margin-top: -150px;
+    height: 150px;
+    background-color: #f2f2f2;
+}
+.marca-pie{
+    float: left;
+    margin: 60px 0;
+}
+.datos-contacto{
+   padding-top:30px;
+}
+.datos-contacto p{
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
